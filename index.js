@@ -208,7 +208,7 @@ const GOOGLE_CLIENT_SECRET = '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';
 passport.use(new GoogleStrategy({
   clientID: GOOGLE_CLIENT_ID,
   clientSecret: GOOGLE_CLIENT_SECRET,
-  callbackURL: "https://saurabh-daintree-fashion.onrender.com/auth/google/callback"
+  callbackURL: "https://daintree-saurabh-project.onrender.com//auth/google/callback"
 },
   function (accessToken, refreshToken, profile, done) {
     userProfile = profile;
