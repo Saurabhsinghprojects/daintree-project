@@ -203,12 +203,12 @@ passport.deserializeUser(function (obj, cb) {
 
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 const User = require('./models/User')
-const GOOGLE_CLIENT_ID = '1005471807557-k4itcqmf1255vpc0f166ptou9fkpog4b.apps.googleusercontent.com';
-const GOOGLE_CLIENT_SECRET = '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';
+const GOOGLE_CLIENT_ID = '789688385624-kvkrm7pu97rmn6cfvncr70ht05021sm5.apps.googleusercontent.com';
+const GOOGLE_CLIENT_SECRET = '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';
 passport.use(new GoogleStrategy({
   clientID: GOOGLE_CLIENT_ID,
   clientSecret: GOOGLE_CLIENT_SECRET,
-  callbackURL: "https://saurabh-daintree.herokuapp.com/auth/google/callback"
+  callbackURL: "https://saurabh-daintree-fashion.onrender.com/auth/google/callback"
 },
   function (accessToken, refreshToken, profile, done) {
     userProfile = profile;
